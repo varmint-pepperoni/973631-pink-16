@@ -135,31 +135,31 @@
       <p class="main-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="upload-form" action="https://echo.htmlacademy.ru">
         <picture class="upload-form__picture"></picture>
-        <div class="upload-form__filter-controls">
-          <label class="upload-form__filter-toggle" for="upload-filter-1">
-              <input type="radio" id="upload-filter-1" name="upload-filter" checked="">
+        <ul class="upload-form__filter-list">
+          <li class="upload-form__filter-item">
+              <button class="upload-form__button-img"></button>
               <span class="visually-hidden">Инструмент "кадрировать"</span>
-          </label>
-          <label class="upload-form__filter-toggle" for="upload-filter-2">
-              <input type="radio" id="upload-filter-2" name="upload-filter">
+          </li>
+          <li class="upload-form__filter-item">
+              <button class="upload-form__button-img"></button>
               <span class="visually-hidden">Инструмент "заливка"</span>
-          </label>
-          <label class="upload-form__filter-toggle" for="upload-filter-3">
-              <input type="radio" id="upload-filter-3" name="upload-filter">
+          </li>
+          <li class="upload-form__filter-item">
+              <button class="upload-form__button-img"></button>
               <span class="visually-hidden">Инструмент "яркость"</span>
-          </label>
-        </div>
+          </li>
+        </ul>
         <div class="upload-form__range-controls">
           <button class="upload-form__range-button"></button>
         </div>
         <div class="upload-form__button-wrap">
-          <input class="button  button__submit-photo  button--active" id="submit-btn" type="submit" value="Запостить">
-          <input class="button  button__reset-photo  button--disabled" id="reset-btn" type="reset" value="Отмена">
+          <button class="upload-form__button-send button  button__submit-photo  button--active"></button>
+          <button class="upload-form__button-send button  button__reset-photo  button--disabled"></button>
         </div>
       </form>
     </main>
     <footer class="page-footer">
-      <a href="index.html" class="page-footer__logo">
+      <a href="index.html" class="page-footer__logo-pink logo-pink">
         <span class="visually-hidden">Логотип "Пинк"</span>
       </a>
       <ul class="social-links">
@@ -174,7 +174,7 @@
         </a></li>
       </ul>
       <a href="https://htmlacademy.ru/" class="developer">
-        <span class="developer__text">Разработано</span>
+        Разработано
       </a>
     </footer>
   </body>
