@@ -1,5 +1,11 @@
+// Main
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "fonts";
 @import "common";
+
+// Blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/menu";

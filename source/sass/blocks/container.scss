@@ -1,0 +1,7 @@
+@include desktop() {
+  .container {
+    width: $desktop_width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
