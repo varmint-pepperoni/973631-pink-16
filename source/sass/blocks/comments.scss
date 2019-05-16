@@ -1,0 +1,48 @@
+.comments {
+  width: $mobile_width;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.comments__list {
+  @include list_reset();
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments__item {
+  display: none;
+
+  text-align: center;
+
+  &--active {
+    display: block;
+  }
+}
+
+.comments__item-author {
+  margin: 0;
+}
+
+.comments__item-name {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.comments__item-info {
+  display: none;
+}
+
+.comments__item-text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  line-height: 30px;
+  color: $color_dark_blue;
+}
