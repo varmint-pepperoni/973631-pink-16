@@ -24,11 +24,11 @@
 
 .comments__item-author {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .comments__item-name {
   display: block;
-  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -45,4 +45,36 @@
 
   line-height: 30px;
   color: $color_dark_blue;
+}
+
+@include tablet() {
+  .comments {
+    width: $tablet_width;
+  }
+
+  .comments__item--active {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .comments__item-author {
+    margin-bottom: 30px;
+  }
+
+  .comments__item-name {
+    font-size: 20px;
+  }
+
+  .comments__item-info {
+    display: block;
+
+    color: $color_dark_blue;
+    line-height: 30px;
+  }
+
+  .comments__item-text {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+  }
 }
