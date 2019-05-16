@@ -1,0 +1,33 @@
+.button-round {
+  display: block;
+  border: 3px solid #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $color_pink;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba($color_pink, 0.3);
+  }
+
+  &--pink {
+    border-color: $color_pink;
+
+    color: $color_pink;
+  }
+}
