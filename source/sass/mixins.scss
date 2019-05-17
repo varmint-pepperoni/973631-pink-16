@@ -22,6 +22,12 @@
   }
 }
 
+@mixin only_tablet() {
+  @media (min-width: $tablet_width) and (max-width: $desktop_width - 0.2) {
+    @content;
+  }
+}
+
 @mixin table_border_hack() {
   position: relative;
 

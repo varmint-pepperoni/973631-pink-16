@@ -160,9 +160,8 @@
   }
 
   .prices__table {
-    width: 620px;
-    margin-left: 20px;
-    margin-bottom: 0;
+    width: $tablet_width - 40px;
+    margin: 0 auto;
   }
 
   .prices__table-th {
@@ -173,28 +172,6 @@
       display: table-cell;
       visibility: hidden;
     }
-
-    &--hit {
-      &::before {
-        width: 61px;
-        height: 61px;
-
-        background-image: url("../../img/bg-hit-tablet.svg");
-      }
-
-      &::after {
-        top: 6px;
-        left: 3px;
-      }
-    }
-  }
-
-  .prices__table-field {
-    font-size: 16px;
-  }
-
-  .prices__table-price {
-    font-size: 18px;
   }
 
   // Хаки для эмулирования закруглённых углов у таблицы
@@ -251,5 +228,50 @@
 
   .prices__switches {
     display: none;
+  }
+}
+
+@include only_tablet() {
+  .prices__table-th {
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+
+        background-image: url("../../img/bg-hit-tablet.svg");
+      }
+
+      &::after {
+        top: 6px;
+        left: 3px;
+      }
+    }
+  }
+
+  .prices__table-field {
+    font-size: 16px;
+  }
+
+  .prices__table-price {
+    font-size: 18px;
+  }
+}
+
+@include desktop() {
+  .prices {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 95px;
+  }
+
+  .prices__table {
+    width: $desktop_width - 40px;
+  }
+
+  .prices__table-function {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 18px;
   }
 }
