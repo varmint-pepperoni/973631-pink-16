@@ -23,7 +23,8 @@
 
   font-size: 0;
   background-color: $color_gray_2;
-  border: 3px solid #ffffff;
+  border: 3px solid transparent;
+  background-clip: content-box;
   border-radius: 50%;
   cursor: pointer;
 
