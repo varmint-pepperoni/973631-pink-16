@@ -201,47 +201,65 @@
       </section>
 
       <section class="comments">
-        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="container comments__container">
+          <h2 class="visually-hidden">Отзывы</h2>
 
-        <ul class="comments__list">
-          <li class="comments__item comments__item--active">
-            <p class="comments__item-author">
-              <strong class="comments__item-name">Николай Петров</strong>
-              <span class="comments__item-info">25 лет, водитель трамвая</span>
-            </p>
+          <button class="comments__btn comments__btn--left">
+            <svg class="comments__btn-arrow">
+              <use xlink:href="#arrow-left"></use>
+            </svg>
 
-            <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
-              на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
+            <span class="visually-hidden">Назад</span>
+          </button>
 
-          <li class="comments__item">
-            <p class="comments__item-title">Николай Петров</p>
+          <ul class="comments__list">
+            <li class="comments__item comments__item--active">
+              <p class="comments__item-author">
+                <strong class="comments__item-name">Николай Петров</strong>
+                <span class="comments__item-info">25 лет, водитель трамвая</span>
+              </p>
 
-            <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
-              на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
+              <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
 
-          <li class="comments__item">
-            <p class="comments__item-title">Николай Петров</p>
+            <li class="comments__item">
+              <p class="comments__item-title">Николай Петров</p>
 
-            <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
-              на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
-        </ul>
+              <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
 
-        <ul class="switches">
-          <li class="switches__item">
-            <button class="switches__button switches__button--active">1</button>
-          </li>
+            <li class="comments__item">
+              <p class="comments__item-title">Николай Петров</p>
 
-          <li class="switches__item">
-            <button class="switches__button">2</button>
-          </li>
+              <p class="comments__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
 
-          <li class="switches__item">
-            <button class="switches__button">3</button>
-          </li>
-        </ul>
+          <button class="comments__btn comments__btn--right">
+            <svg class="comments__btn-arrow">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+
+          <ul class="comments__switches switches">
+            <li class="switches__item">
+              <button class="switches__button switches__button--active">1</button>
+            </li>
+
+            <li class="switches__item">
+              <button class="switches__button">2</button>
+            </li>
+
+            <li class="switches__item">
+              <button class="switches__button">3</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="price-section">

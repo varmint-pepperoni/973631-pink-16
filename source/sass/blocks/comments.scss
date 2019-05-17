@@ -5,6 +5,10 @@
   padding-bottom: 40px;
 }
 
+.comments__btn {
+  display: none;
+}
+
 .comments__list {
   @include list_reset();
 
@@ -76,5 +80,86 @@
     margin-bottom: 40px;
 
     font-size: 18px;
+  }
+}
+
+@include desktop() {
+  .comments {
+    width: 100%;
+  }
+
+  .comments__container {
+    position: relative;
+  }
+
+  .comments__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    padding: 0;
+
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: $color_gray_2;
+
+    &:hover {
+      color: #7e868f;
+    }
+
+    &:active {
+      color: #e9ebec;
+    }
+
+    &--left {
+      left: 20px;
+    }
+
+    &--right {
+      right: 20px;
+    }
+  }
+
+  .comments__btn-arrow {
+    display: block;
+    width: 22px;
+    height: 41px;
+  }
+
+  .comments__list {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .comments__item {
+    position: relative;
+
+    padding-top: 120px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 79px;
+      height: 63px;
+
+      background-image: url("../../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .comments__item-name {
+    font-size: 24px;
+  }
+
+  .comments__switches {
+    display: none;
   }
 }
