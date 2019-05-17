@@ -1,0 +1,22 @@
+.triangle {
+  width: $mobile_width;
+  margin: 0 auto;
+
+  background-color: $color_gray;
+}
+
+.triangle-svg {
+  display: block;
+}
+
+@include tablet() {
+  .triangle {
+    width: $tablet_width;
+  }
+}
+
+@include desktop() {
+  .triangle {
+    width: 100%;
+  }
+}
