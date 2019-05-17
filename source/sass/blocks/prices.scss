@@ -1,0 +1,141 @@
+.prices {
+  width: $mobile_width;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 47px;
+
+  overflow: hidden;
+}
+
+.prices__table {
+  $mobile_table_width: 832px;
+
+  width: $mobile_table_width;
+  margin-bottom: 40px;
+  margin-left: -($mobile_table_width - $mobile_width) / 2;
+
+  border-collapse: collapse;
+}
+
+.prices__table-th {
+  position: relative;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  background-color: $color_dark_blue;
+  color: #ffffff;
+
+  &:first-child {
+    display: none;
+  }
+
+  &:nth-child(3) {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  &--hit {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -2px;
+
+      display: block;
+      width: 74px;
+      height: 73px;
+
+      background-image: url("../../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "Хит";
+
+      position: absolute;
+      top: 13px;
+      left: 8px;
+      transform: rotate(-45deg);
+
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+  }
+}
+
+.prices__table-field {
+  display: block;
+
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.prices__table-price {
+  display: block;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.prices__table-tr {
+  &:first-child {
+    .prices__table-value {
+      border-top: none;
+    }
+  }
+}
+
+.prices__table-function {
+  display: none;
+}
+
+.prices__table-value {
+  position: relative;
+
+  padding-left: 22px;
+  padding-right: 66px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #e5e5e5;
+
+  text-transform: uppercase;
+  color: $color_dark_blue;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+
+    background-repeat: no-repeat;
+  }
+
+  &--yes {
+    &::before {
+      width: 31px;
+      height: 21px;
+
+      background-image: url("../../img/icon-yes.svg");
+    }
+  }
+
+  &--no {
+    &::before {
+      width: 27px;
+      height: 26px;
+
+      background-image: url("../../img/icon-no.svg");
+    }
+  }
+}

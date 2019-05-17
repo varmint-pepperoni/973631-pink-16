@@ -262,43 +262,106 @@
         </div>
       </section>
 
-      <section class="price-section">
+      <section class="prices">
         <h2 class="visually-hidden">Тарифы</h2>
-          <table class="price-section__list">
-            <thead class="price-section__list-head">
-              <tr>
-                <th class="price-section__value"></th>
-                <th class="price-section__value">База<p>1,99 USD</p></th>
-                <th class="price-section__value">Стандарт<p>3,99 USD</p></th>
-                <th class="price-section__value">Анлим<p>9,99 USD</p></th>
-              </tr>
-            </thead>
-            <tbody class="price-section__list-body">
-              <tr>
-                <td class="price-section__field price-section__field--empty">Розовый фильтр</td>
-                <td class="price-section__field price-section__field--ok">Есть</td>
-                <td class="price-section__field price-section__field--ok">Есть</td>
-                <td class="price-section__field price-section__field--ok">Есть</td>
-              </tr>
-              <tr>
-                <td class="price-section__field price-section__field--empty">Смайлики</td>
-                <td class="price-section__field price-section__field--cancel">Отсутствует</td>
-                <td class="price-section__field price-section__field--ok">Отсутствует</td>
-                <td class="price-section__field price-section__field--ok">Отсутствует</td>
-              </tr>
-              <tr>
-                <td class="price-section__field price-section__field--empty">Комментарии</td>
-                <td class="price-section__field price-section__field--cancel">Отсутствует</td>
-                <td class="price-section__field price-section__field--cancel">Отсутствует</td>
-                <td class="price-section__field price-section__field--ok">Есть</td>
-              </tr>
-            </tbody>
-          </table>
-          <ul class="price-section__toggles-list slider">
-            <li class="price-section__toggles-item"><button class="slider__toggle" type="button">1</button></li>
-            <li class="price-section__toggles-item"><button class="slider__toggle" type="button">2</button></li>
-            <li class="price-section__toggles-item"><button class="slider__toggle" type="button">3</button></li>
-          </ul>
+
+        <table class="prices__table">
+          <thead class="prices__table-head">
+            <tr>
+              <th class="prices__table-th prices__table-th--empty"></th>
+
+              <th class="prices__table-th">
+                <strong class="prices__table-field">База</strong>
+                <strong class="prices__table-price">1,99 USD</strong>
+              </th>
+
+              <th class="prices__table-th prices__table-th--hit">
+                <div class="visually-hidden">Хит</div>
+
+                <strong class="prices__table-field">Стандарт</strong>
+                <strong class="prices__table-price">3,99 USD</strong>
+              </th>
+
+              <th class="prices__table-th">
+                <strong class="prices__table-field">Анлим</strong>
+                <strong class="prices__table-price">9,99 USD</strong>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="prices__table-body">
+            <tr class="prices__table-tr">
+              <td class="prices__table-function">Розовый фильтр</td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Розовый фильтр
+                <span class="visually-hidden">Есть</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Розовый фильтр
+                <span class="visually-hidden">Есть</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Розовый фильтр
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+
+            <tr class="prices__table-tr">
+              <td class="prices__table-function">Смайлики</td>
+
+              <td class="prices__table-value prices__table-value--no">
+                Смайлики
+                <span class="visually-hidden">Нет</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Смайлики
+                <span class="visually-hidden">Есть</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Смайлики
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+
+            <tr class="prices__table-tr">
+              <td class="prices__table-function">Комментарии</td>
+
+              <td class="prices__table-value prices__table-value--no">
+                Комментарии
+                <span class="visually-hidden">Нет</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--no">
+                Комментарии
+                <span class="visually-hidden">Нет</span>
+              </td>
+
+              <td class="prices__table-value prices__table-value--yes">
+                Комментарии
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul class="prices__switches switches">
+          <li class="switches__item">
+            <button class="switches__button">1</button>
+          </li>
+
+          <li class="switches__item">
+            <button class="switches__button switches__button--active">2</button>
+          </li>
+
+          <li class="switches__item">
+            <button class="switches__button">3</button>
+          </li>
+        </ul>
       </section>
 
       <section class="contacts-section">
