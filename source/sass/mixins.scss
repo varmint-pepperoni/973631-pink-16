@@ -21,3 +21,20 @@
     @content;
   }
 }
+
+@mixin table_border_hack() {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    @content;
+
+    display: block;
+    width: 1px;
+    height: 1px;
+
+    background-color: $color_gray;
+  }
+}

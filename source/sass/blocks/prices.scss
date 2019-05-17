@@ -29,13 +29,23 @@
   background-color: $color_dark_blue;
   color: #ffffff;
 
-  &:first-child {
+  &:nth-child(1) {
     display: none;
+  }
+
+  &:nth-child(2) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 
   &:nth-child(3) {
     border-left: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
+  }
+
+  &:nth-child(4) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 
   &--hit {
@@ -108,6 +118,7 @@
   text-transform: uppercase;
   color: $color_dark_blue;
   line-height: 30px;
+  background-color: #ffffff;
 
   &::before {
     content: "";
@@ -137,6 +148,101 @@
       height: 26px;
 
       background-image: url("../../img/icon-no.svg");
+    }
+  }
+}
+
+@include tablet() {
+  .prices {
+    width: $tablet_width;
+  }
+
+  .prices__table {
+    width: 620px;
+    margin-left: 20px;
+  }
+
+  .prices__table-th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:first-child {
+      display: table-cell;
+      visibility: hidden;
+    }
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+
+        background-image: url("../../img/bg-hit-tablet.svg");
+      }
+
+      &::after {
+        top: 6px;
+        left: 3px;
+      }
+    }
+  }
+
+  .prices__table-field {
+    font-size: 16px;
+  }
+
+  .prices__table-price {
+    font-size: 18px;
+  }
+
+  // Хаки для эмулирования закруглённых углов у таблицы
+  .prices__table-tr {
+    &:first-child {
+      .prices__table-function {
+        @include table_border_hack() {
+          top: -2px;
+          left: -2px;
+        }
+      }
+    }
+
+    &:last-child {
+      .prices__table-function {
+        @include table_border_hack() {
+          bottom: -2px;
+          left: -2px;
+        }
+      }
+
+      .prices__table-value {
+        &:last-child {
+          @include table_border_hack() {
+            bottom: -2px;
+            right: -2px;
+          }
+        }
+      }
+    }
+  }
+
+  .prices__table-function {
+    display: table-cell;
+
+    padding-left: 15px;
+    border: 2px solid #e5e5e5;
+
+    background-color: #ffffff;
+    color: $color_dark_blue;
+  }
+
+  .prices__table-value {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 0;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 }
