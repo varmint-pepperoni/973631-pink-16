@@ -155,11 +155,14 @@
 @include tablet() {
   .prices {
     width: $tablet_width;
+    padding-top: 40px;
+    padding-bottom: 68px;
   }
 
   .prices__table {
     width: 620px;
     margin-left: 20px;
+    margin-bottom: 0;
   }
 
   .prices__table-th {
@@ -244,5 +247,9 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
+  }
+
+  .prices__switches {
+    display: none;
   }
 }
