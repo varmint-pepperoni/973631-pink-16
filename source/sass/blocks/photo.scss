@@ -63,10 +63,6 @@
   color: $color_dark_blue;
 }
 
-.photo__author-name {
-
-}
-
 .photo__time {
   font-weight: 300;
   font-size: 12px;
@@ -100,6 +96,56 @@
 
     background-image: url("../../img/icon-heart.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@include tablet() {
+  .photo {
+    &--panorama {
+      width: $tablet_width;
+
+      .photo__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .photo__comment {
+        order: 1;
+        width: 100%;
+      }
+
+      .photo__likes {
+        padding-left: 0;
+        padding-right: 30px;
+
+        &::before {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+
+    &:not(.photo--panorama) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .photo__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .photo__comment {
+        flex-grow: 1;
+        min-height: 48px;
+      }
+    }
+  }
+
+  .photo__panorama {
+    width: $tablet_width;
   }
 }
 
