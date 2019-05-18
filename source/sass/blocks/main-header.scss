@@ -4,15 +4,21 @@
   padding-top: 95px;
   padding-bottom: 80px;
 
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+
+.main-header__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top center;
 }
 
 @include tablet() {
@@ -21,8 +27,21 @@
     padding-top: 185px;
     padding-bottom: 145px;
 
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .main-header__title {
     font-size: 50px;
     line-height: 60px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@include desktop() {
+  .main-header {
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 95px;
+
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
   }
 }
