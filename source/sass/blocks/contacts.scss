@@ -2,7 +2,6 @@
   width: $mobile_width;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 35px;
 
   background-color: #ffffff;
 }
@@ -72,9 +71,14 @@
   z-index: 1;
 }
 
-.contacts__map-img {
+.contacts__map-picture {
   position: absolute;
   bottom: 0;
+  font-size: 0;
+}
+
+.contacts__map-img {
+  display: block;
 }
 
 @include tablet() {
@@ -110,7 +114,7 @@
     height: 375px;
   }
 
-  .contacts__map-img {
+  .contacts__map-picture {
     width: 700px;
     height: 848px;
   }
@@ -159,7 +163,7 @@
     justify-content: center;
   }
 
-  .contacts__map-img {
+  .contacts__map-picture {
     width: 1200px;
     height: 976px;
   }
