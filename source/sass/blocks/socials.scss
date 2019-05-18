@@ -1,0 +1,41 @@
+.socials {
+  @include list_reset();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.socials__item {
+  margin-left: 17px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.socials__link {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #e9ebec;
+
+  border-radius: 50%;
+  color: $color_pink;
+
+  &:hover {
+    border-color: $color_dark_blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+    border-color: $color_dark_blue;
+  }
+}
+
+.socials__link-svg {
+  display: block;
+}
