@@ -302,16 +302,16 @@
   </section>
 
   <section class="editor">
-    <form class="editor__form" action="https://echo.htmlacademy.ru">
-      <picture class="editor__picture">
-        <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 960px)">
-        <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
-        <img class="photo__img" src="img/photo-road-mobile@1x.jpg"
-          srcset="img/photo-road-mobile@2x.jpg 2x" alt="Зимняя дорога">
-      </picture>
+    <picture class="editor__picture">
+      <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 960px)">
+      <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
+      <img class="photo__img" src="img/photo-road-mobile@1x.jpg"
+           srcset="img/photo-road-mobile@2x.jpg 2x" alt="Зимняя дорога">
+    </picture>
 
+    <form class="editor__form" action="https://echo.htmlacademy.ru">
       <ul class="editor__controls">
-        <li class="editor__control">
+        <li class="editor__control editor__control--crop">
           <input class="editor__control-radio" type="radio" name="editor-control" id="editor-crop" checked>
 
           <label class="editor__control-label" for="editor-crop">
@@ -326,7 +326,7 @@
           <input class="range editor__control-range" type="range">
         </li>
 
-        <li class="editor__control">
+        <li class="editor__control editor__control--fill">
           <input class="editor__control-radio" type="radio" name="editor-control" id="editor-fill">
 
           <label class="editor__control-label" for="editor-fill">
@@ -342,7 +342,7 @@
           <input class="range editor__control-range" type="range">
         </li>
 
-        <li class="editor__control">
+        <li class="editor__control editor__control--contrast">
           <input class="editor__control-radio" type="radio" name="editor-control" id="editor-contrast">
 
           <label class="editor__control-label" for="editor-contrast">
