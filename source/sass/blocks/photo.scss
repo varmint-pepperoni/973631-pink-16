@@ -1,0 +1,105 @@
+.photo {
+  position: relative;
+
+  &--panorama {
+    width: $mobile_width;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    .photo__info {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.photo__panorama {
+  position: absolute;
+  top: 0;
+
+  width: $mobile_width;
+  margin: 0 auto;
+}
+
+.photo__panorama-text {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+
+  background-color: $color_pink;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.photo__picture {
+  display: block;
+}
+
+.photo__img {
+  display: block;
+}
+
+.photo__info {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $color_gray;
+}
+
+.photo__author {
+  margin: 0;
+
+  color: $color_dark_blue;
+}
+
+.photo__author-name {
+
+}
+
+.photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__comment {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.photo__likes {
+  position: relative;
+
+  margin: 0;
+  padding-left: 30px;
+
+  text-transform: uppercase;
+  color: $color_pink;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 12px;
+    height: 13px;
+
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
