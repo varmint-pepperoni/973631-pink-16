@@ -35,8 +35,12 @@
     &:nth-child(2) {
       margin-top: 0;
     }
+  }
+}
 
-    &:nth-child(3n) {
+@include only_tablet() {
+  .photos__item {
+    &:nth-child(2n) {
       margin-right: 0;
     }
   }
@@ -55,6 +59,10 @@
   .photos__item {
     &:nth-child(3) {
       margin-top: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
     }
   }
 }
