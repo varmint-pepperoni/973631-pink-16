@@ -115,3 +115,52 @@
     height: 848px;
   }
 }
+
+@include desktop() {
+  .contacts {
+    width: 100%;
+    padding-top: 65px;
+  }
+
+  .contacts__question,
+  .contacts__answer {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__address {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .contacts__info-block {
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__info-title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__map {
+    height: 510px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts__map-img {
+    width: 1200px;
+    height: 976px;
+  }
+}
