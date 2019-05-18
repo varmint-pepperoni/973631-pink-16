@@ -26,13 +26,34 @@
   .photos__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .photos__item {
     width: 300px;
+    margin-right: 20px;
 
     &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@include desktop() {
+  .photos {
+    width: $desktop_width;
+  }
+
+  .photos__list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .photos__item {
+    &:nth-child(3) {
       margin-top: 0;
     }
   }
