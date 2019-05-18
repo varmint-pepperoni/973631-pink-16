@@ -1,8 +1,5 @@
 .footer {
   width: $mobile_width;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -10,6 +7,12 @@
   &--no-mobile {
     display: none;
   }
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__logo {
@@ -76,11 +79,14 @@
 
 @include tablet() {
   .footer {
-    display: flex;
-    justify-content: space-between;
     width: $tablet_width;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .footer__logo {
@@ -90,5 +96,13 @@
   .footer__socials {
     width: 200px;
     margin-bottom: 0;
+  }
+}
+
+@include desktop() {
+  .footer {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 74px;
   }
 }
