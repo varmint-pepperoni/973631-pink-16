@@ -82,10 +82,10 @@
     width: $tablet_width;
     padding-left: 20px;
     padding-right: 20px;
+    display: block;
   }
 
   .footer__container {
-    display: flex;
     justify-content: space-between;
   }
 
