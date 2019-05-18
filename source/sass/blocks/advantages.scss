@@ -201,6 +201,8 @@
   .advantages__answer {
     width: $desktop_width;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .advantages__answer {
@@ -216,7 +218,7 @@
   .advantages__list-ul {
     width: $desktop_width;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -280,10 +282,12 @@
     margin: 0 auto;
     padding-top: 125px;
     padding-left: 380px;
+    padding-right: 10px;
     min-height: 375px;
 
     &::before {
       top: 30px;
+      left: 10px;
 
       width: 298px;
       height: 345px;

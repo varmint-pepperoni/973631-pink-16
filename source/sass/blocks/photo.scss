@@ -167,8 +167,12 @@
       width: 100%;
       margin-bottom: 50px;
 
+      .photo__img {
+        margin: 0 auto;
+      }
+
       .photo__info {
-        width: $desktop_width;
+        width: $desktop_width - 20px;
         margin: 0 auto;
       }
     }
@@ -178,5 +182,9 @@
     width: $desktop_width;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .photo__panorama-text {
+    right: 10px;
   }
 }
