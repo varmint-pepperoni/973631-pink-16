@@ -1,0 +1,35 @@
+.main-text {
+  width: $mobile_width;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-text__paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-align: center;
+  color: $color_dark_blue;
+  line-height: 30px;
+}
+
+@include tablet() {
+  .main-text {
+    width: $tablet_width;
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  .main-text__paragraph {
+    font-size: 18px;
+  }
+}
+
+@include desktop() {
+  .main-text {
+    width: 100%;
+  }
+}
