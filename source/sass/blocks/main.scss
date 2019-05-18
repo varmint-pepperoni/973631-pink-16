@@ -1,0 +1,9 @@
+.main {
+  margin-top: -66px;
+}
+
+@include tablet() {
+  .main {
+    margin-top: -110px;
+  }
+}
