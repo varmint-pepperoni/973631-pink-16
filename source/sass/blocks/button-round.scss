@@ -25,6 +25,11 @@
     color: rgba($color_pink, 0.3);
   }
 
+  &:disabled {
+    opacity: 0.1;
+    cursor: default;
+  }
+
   &--pink {
     border-color: $color_pink;
 

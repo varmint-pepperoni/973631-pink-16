@@ -1,0 +1,80 @@
+.editor {
+  width: $mobile_width;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  background-color: $color_gray;
+}
+
+.editor__picture {
+  display: block;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.editor__controls {
+  @include list_reset();
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding-left: 61px;
+  padding-right: 61px;
+  padding-bottom: 73px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.editor__control-radio {
+  display: none;
+
+  &:checked + .editor__control-label {
+    color: $color_pink;
+  }
+
+  &:checked + .editor__control-label + .editor__control-range {
+    display: block;
+  }
+}
+
+.editor__control-label {
+  display: block;
+
+  color: #b5b9be;
+  cursor: pointer;
+
+  &:hover {
+    color: #8d949b;
+  }
+}
+
+.editor__control-icon {
+  display: block;
+}
+
+.editor__control-range {
+  position: absolute;
+  bottom: 28px;
+  left: 38px;
+
+  width: 240px;
+  display: none;
+}
+
+.editor__btns {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.editor__btn {
+  width: 100%;
+
+  &:first-child {
+    margin-bottom: 12px;
+  }
+}
