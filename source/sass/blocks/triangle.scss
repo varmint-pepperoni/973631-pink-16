@@ -3,6 +3,10 @@
   margin: 0 auto;
 
   background-color: $color_gray;
+
+  &--transparent {
+    background-color: transparent;
+  }
 }
 
 .triangle-svg {

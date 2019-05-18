@@ -369,23 +369,37 @@
         </ul>
       </section>
 
-      <section class="contacts-section">
-        <h2 class="contacts-section__title">Остались вопросы?</h2>
-        <p class="contacts-section__title">Свяжитесь с нами!</p>
-        <p class="contacts-section__info-block">
-          <span class="contacts-section__info-title">Звоните:</span>
-          <a class="contacts-section__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts-section__info-block">
-          <span class="contacts-section__info-title">Пишите:</span>
-          <a class="contacts-section__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts-section__info-block">
-          <span class="contacts-section__info-title">Приезжайте в гости:</span>
-          <a class="contacts-section__data" href="https://yandex.ru/maps/-/CVTgZEpc">ул. Большая<br>Конюшенная, 19/8</a>
-        </p>
-        <div class="contacts-section__map">
-          <span class="contacts-section__map-location"></span>
+      <section class="contacts">
+        <h2 class="contacts__question">Остались вопросы?</h2>
+
+        <p class="contacts__answer">Свяжитесь с нами!</p>
+
+        <address class="contacts__address">
+          <p class="contacts__info-block">
+            <strong class="contacts__info-title">Звоните:</strong>
+            <a class="contacts__info-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+
+          <p class="contacts__info-block">
+            <strong class="contacts__info-title">Пишите:</strong>
+            <a class="contacts__info-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+
+          <p class="contacts__info-block">
+            <strong class="contacts__info-title">Приезжайте в гости:</strong>
+            <a class="contacts__info-link" href="https://yandex.ru/maps/-/CVTgZEpc">ул. Большая<br>Конюшенная, 19/8</a>
+          </p>
+        </address>
+
+        <div class="contacts__map">
+          <div class="contacts__map-triangle triangle triangle--transparent">
+            <svg class="triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 61.905">
+              <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+            </svg>
+          </div>
+
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" width="320"
+               height="645">
         </div>
       </section>
     </main>
