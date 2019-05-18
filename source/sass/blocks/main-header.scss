@@ -1,4 +1,4 @@
-.main-photos__header {
+.main-header {
   width: $mobile_width;
   margin: 0 auto;
   padding-top: 95px;
@@ -11,6 +11,18 @@
   color: #ffffff;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: top center;
+}
+
+@include tablet() {
+  .main-header {
+    width: $tablet_width;
+    padding-top: 185px;
+    padding-bottom: 145px;
+
+    font-size: 50px;
+    line-height: 60px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
 }
