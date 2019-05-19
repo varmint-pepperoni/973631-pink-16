@@ -167,6 +167,9 @@
       width: 100%;
       margin-bottom: 50px;
 
+      // Хак для IE. Иначе появляется горизонтальная прокрутка.
+      overflow: hidden;
+
       .photo__img {
         margin: 0 auto;
       }
