@@ -96,7 +96,7 @@
     </header>
 
     <main class="main">
-      <section class="download">
+      <section class="download main-header">
         <div class="container">
           <div class="download__inner">
             <p class="download__slogan">Взгляните на жизнь иначе!</p>
@@ -401,9 +401,10 @@
           </div>
 
           <picture class="contacts__map-picture">
-            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 960px)">
-            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 660px)">
-            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
+            <source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 960px)">
+            <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg" media="(min-width: 660px)">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"
+                 alt="ул. Большая Конюшенная, 19/8">
           </picture>
         </div>
       </section>
