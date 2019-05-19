@@ -1,0 +1,22 @@
+.fieldset {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 42px;
+  border: none;
+
+  &--gray {
+    background-color: $color_gray;
+  }
+}
+
+.fieldset__title {
+  margin-bottom: 30px;
+
+  color: $color_pink;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}

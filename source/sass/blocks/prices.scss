@@ -39,8 +39,8 @@
   }
 
   &:nth-child(3) {
-    border-left: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
+    border-left: 2px solid $color_gray_3;
+    border-right: 2px solid $color_gray_3;
   }
 
   &:nth-child(4) {
@@ -113,7 +113,7 @@
   padding-right: 66px;
   padding-top: 15px;
   padding-bottom: 15px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $color_gray_3;
 
   text-transform: uppercase;
   color: $color_dark_blue;
@@ -208,7 +208,7 @@
     display: table-cell;
 
     padding-left: 15px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $color_gray_3;
 
     background-color: #ffffff;
     color: $color_dark_blue;

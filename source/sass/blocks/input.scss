@@ -1,0 +1,21 @@
+.input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 2px solid $color_gray_3;
+
+  border-radius: 2px;
+  color: $color_dark_blue;
+  font-size: 18px;
+  line-height: 30px;
+
+  &:hover {
+    border-color: $color_dark_blue;
+  }
+
+  &:focus {
+    border-color: $color_pink;
+    outline: none;
+  }
+}

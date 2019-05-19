@@ -3,6 +3,97 @@
   margin: 0 auto;
 }
 
+.form__fullname {
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fullname-field,
+.form__contacts-field {
+  margin: 0;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__fullname-label,
+.form__contacts-label {
+  padding-left: 23px;
+  margin-bottom: 10px;
+
+  line-height: 30px;
+  color: $color_pink;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__fullname-input,
+.form__contacts-input {
+  width: 100%;
+}
+
+.form__achievements-list {
+  @include list_reset();
+}
+
+.form__achievements-field {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__application-list {
+  @include list_reset();
+}
+
+.form__application-field {
+  margin-bottom: 36px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__review-title {
+  margin-bottom: 15px;
+}
+
+.form__review-field {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+
+  resize: vertical;
+}
+
+.form__button {
+  display: block;
+  width: $mobile_width - 40px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.form__note {
+  width: $mobile_width - 40px;
+  margin: 0 auto;
+
+  text-align: center;
+  color: $color_dark_blue;
+  text-transform: uppercase;
+}
+
+.form__note-star {
+  color: $color_pink;
+}
+
 @include tablet() {
   .form {
     width: $tablet_width;
