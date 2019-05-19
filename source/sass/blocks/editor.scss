@@ -165,3 +165,68 @@
     padding: 0;
   }
 }
+
+@include desktop() {
+  .editor {
+    width: $desktop_width - 20px;
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .editor__form {
+    width: 410px;
+  }
+
+  .editor__control {
+    padding-right: 30px;
+
+    &--crop {
+      padding-top: 0;
+      padding-bottom: 13px;
+
+      .editor__control-icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &--fill {
+      padding-top: 15px;
+      padding-bottom: 14px;
+
+      .editor__control-icon {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      padding-top: 18px;
+      padding-bottom: 19px;
+
+      .editor__control-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .editor__control-range {
+    width: 288px;
+  }
+
+  .editor__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor__btn {
+    width: auto;
+    min-width: 183px;
+  }
+
+  .editor__btn:first-child {
+    margin-bottom: 0;
+  }
+}
