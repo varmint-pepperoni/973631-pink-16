@@ -65,6 +65,9 @@
     height: 12px;
     border: 2px solid $color_pink;
 
+    // Хак для ровного позиционирования
+    margin-top: 1px;
+
     border-radius: 50%;
     background: $color_gray;
     cursor: pointer;
