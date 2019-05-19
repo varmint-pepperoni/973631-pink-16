@@ -16,10 +16,6 @@
   line-height: 30px;
 }
 
-.main-text__additional {
-  display: none;
-}
-
 @include tablet() {
   .main-text {
     width: $tablet_width;
@@ -29,10 +25,6 @@
 
   .main-text__paragraph {
     font-size: 18px;
-  }
-
-  .main-text__additional {
-    display: inline;
   }
 }
 

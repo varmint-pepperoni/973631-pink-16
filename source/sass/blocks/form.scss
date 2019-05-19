@@ -3,17 +3,20 @@
   margin: 0 auto;
 }
 
+// Fullname
+
 .form__fullname {
-  border: none;
+  @include fieldset_reset();
+
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 42px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
-.form__fullname-field,
-.form__contacts-field {
+.form__fullname-field {
   margin: 0;
   margin-bottom: 23px;
 
@@ -22,8 +25,7 @@
   }
 }
 
-.form__fullname-label,
-.form__contacts-label {
+.form__fullname-label {
   padding-left: 23px;
   margin-bottom: 10px;
 
@@ -33,9 +35,15 @@
   cursor: pointer;
 }
 
-.form__fullname-input,
-.form__contacts-input {
+.form__fullname-input {
   width: 100%;
+}
+
+// Achievements
+
+.form__achievements-body {
+  padding-top: 40px;
+  padding-bottom: 42px;
 }
 
 .form__achievements-list {
@@ -50,6 +58,43 @@
   }
 }
 
+// Contacts
+
+.form__contacts-body {
+  padding-top: 35px;
+  padding-bottom: 42px;
+}
+
+.form__contacts-field {
+  margin: 0;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__contacts-label {
+  padding-left: 23px;
+  margin-bottom: 10px;
+
+  line-height: 30px;
+  color: $color_pink;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__contacts-input {
+  width: 100%;
+}
+
+// Application
+
+.form__application-body {
+  padding-top: 35px;
+  padding-bottom: 42px;
+}
+
 .form__application-list {
   @include list_reset();
 }
@@ -62,8 +107,11 @@
   }
 }
 
-.form__review-title {
-  margin-bottom: 15px;
+// Review
+
+.form__review-body {
+  padding-top: 17px;
+  padding-bottom: 48px;
 }
 
 .form__review-field {
@@ -74,17 +122,21 @@
   resize: vertical;
 }
 
+// Footer
+
+.form__footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form__button {
   display: block;
-  width: $mobile_width - 40px;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 .form__note {
-  width: $mobile_width - 40px;
-  margin: 0 auto;
-
+  margin: 0;
   text-align: center;
   color: $color_dark_blue;
   text-transform: uppercase;
@@ -97,6 +149,177 @@
 @include tablet() {
   .form {
     width: $tablet_width;
+  }
+
+  .form__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Fullname
+
+  .form__fullname {
+    order: 1;
+    padding-bottom: 60px;
+  }
+
+  .form__fullname-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+
+  .form__fullname-label {
+    padding-left: 0;
+    margin-right: 20px;
+  }
+
+  .form__fullname-input {
+    padding-left: 22px;
+  }
+
+  // Achievements
+
+  .form__achievements {
+    order: 4;
+    margin-bottom: 58px;
+  }
+
+  .form__achievements-body {
+    padding-top: 42px;
+    padding-bottom: 48px;
+  }
+
+  // Contacts
+
+  .form__contacts {
+    order: 3;
+    margin-bottom: 58px;
+  }
+
+  .form__contacts-body {
+    padding-top: 38px;
+    padding-bottom: 27px;
+  }
+
+  .form__contacts-field {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+
+  .form__contacts-phone,
+  .form__contacts-email {
+    position: relative;
+
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      width: 60px;
+
+      background-color: $color_gray_3;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      background-repeat: no-repeat;
+    }
+  }
+
+  .form__contacts-phone {
+    &::after {
+      right: 21px;
+
+      width: 20px;
+      height: 19px;
+
+      background-image: url("../../img/icon-phone.svg");
+    }
+  }
+
+  .form__contacts-email {
+    &::after {
+      right: 21px;
+
+      width: 19px;
+      height: 13px;
+
+      background-image: url("../../img/icon-mail.svg");
+    }
+  }
+
+  .form__contacts-label {
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .form__contacts-input {
+    position: relative;
+    z-index: 1;
+
+    padding-left: 20px;
+    padding-right: 80px;
+
+    background-color: transparent;
+  }
+
+  // Application
+
+  .form__application {
+    order: 2;
+    margin-bottom: 58px;
+  }
+
+  .form__application-body {
+    padding-top: 45px;
+    padding-bottom: 54px;
+  }
+
+  // Review
+
+  .form__review {
+    order: 5;
+    margin-bottom: 67px;
+  }
+
+  .form__review-body {
+    padding-top: 35px;
+    padding-bottom: 51px;
+  }
+
+  // Footer
+
+  .form__footer {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .form__button {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .form__note {
+    margin: 0;
   }
 }
 

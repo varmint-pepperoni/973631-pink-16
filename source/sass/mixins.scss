@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+@mixin fieldset_reset() {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 @mixin tablet() {
   @media (min-width: $tablet_width) {
     @content;

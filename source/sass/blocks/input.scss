@@ -10,6 +10,26 @@
   font-size: 18px;
   line-height: 30px;
 
+  &::-moz-placeholder {
+    color: $color_dark_blue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color_dark_blue;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color_dark_blue;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color_dark_blue;
+  }
+
+  &::placeholder {
+    color: $color_dark_blue;
+  }
+
   &:hover {
     border-color: $color_dark_blue;
   }
@@ -17,5 +37,12 @@
   &:focus {
     border-color: $color_pink;
     outline: none;
+  }
+}
+
+@include tablet() {
+  .input {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

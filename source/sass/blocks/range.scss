@@ -1,11 +1,10 @@
-/* stylelint-disable */
 .range {
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
 
   background-color: transparent;
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* stylelint-disable-line */
 
   &::-webkit-slider-runnable-track {
     width: 100%;
@@ -49,7 +48,7 @@
     border-radius: 50%;
     background: $color_gray;
     cursor: pointer;
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* stylelint-disable-line */
   }
 
   &::-moz-range-thumb {

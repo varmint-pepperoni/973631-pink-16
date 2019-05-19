@@ -1,0 +1,17 @@
+.form-page__main {
+  margin-bottom: 20px;
+}
+
+.form-page__main-text {
+  padding-bottom: 40px;
+}
+
+@include tablet() {
+  .form-page__main {
+    margin-bottom: 46px;
+  }
+
+  .form-page__main-text {
+    padding-bottom: 70px;
+  }
+}

@@ -35,3 +35,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@include only_mobile() {
+  .mobile-hidden {
+    display: none !important; /* stylelint-disable-line */
+  }
+}
