@@ -1,0 +1,16 @@
+.form {
+  width: $mobile_width;
+  margin: 0 auto;
+}
+
+@include tablet() {
+  .form {
+    width: $tablet_width;
+  }
+}
+
+@include desktop() {
+  .form {
+    width: 100%;
+  }
+}
