@@ -46,16 +46,13 @@
   padding-bottom: 42px;
 }
 
-.form__achievements-list {
-  @include list_reset();
+.form__achievements-field {
+  margin: 0;
+  margin-bottom: 43px;
 }
 
-.form__achievements-field {
-  margin-bottom: 43px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+.form__achievements-group:last-child .form__achievements-field:last-child {
+  margin-bottom: 0;
 }
 
 // Contacts
@@ -144,6 +141,10 @@
 
 .form__note-star {
   color: $color_pink;
+}
+
+.form__note-refinement {
+  display: none;
 }
 
 @include tablet() {
@@ -326,5 +327,101 @@
 @include desktop() {
   .form {
     width: 100%;
+  }
+
+  .form__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // Fullname
+  .form__fullname {
+    width: 435px;
+    padding: 0;
+    margin-top: auto;
+  }
+
+  .form__fullname-field {
+    &:first-child {
+      margin-bottom: 54px;
+    }
+  }
+
+  // Achievements
+
+  .form__achievements {
+    width: 100%;
+  }
+
+  .form__achievements-body {
+    padding-bottom: 55px;
+  }
+
+  .form__achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__achievements-field {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__achievements-label {
+    padding-left: 60px;
+  }
+
+  // Contacts
+
+  .form__contacts {
+    width: 100%;
+    margin-top: 57px;
+  }
+
+  .form__contacts-body {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+  .form__contacts-field {
+    width: 371px;
+    margin: 0;
+  }
+
+  // Application
+
+  .form__application {
+    width: 435px;
+    margin-bottom: 0;
+  }
+
+  .form__application-body {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 55px;
+  }
+
+  // Review
+
+  .form__review {
+    width: 100%;
+  }
+
+  .form__review-field {
+    min-height: 128px;
+  }
+
+  // Footer
+  .form__footer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form__note-refinement {
+    display: inline;
   }
 }
