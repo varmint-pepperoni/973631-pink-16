@@ -161,11 +161,12 @@
 
   .contacts__map {
     height: 510px;
-    display: flex;
-    justify-content: center;
   }
 
   .contacts__map-picture {
+    left: 50%;
+    transform: translateX(-50%);
+
     width: 1200px;
     height: 976px;
   }
