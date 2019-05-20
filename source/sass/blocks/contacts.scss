@@ -65,12 +65,6 @@
   overflow: hidden;
 }
 
-.contacts__map-triangle {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
 .contacts__map-picture {
   position: absolute;
   bottom: 0;
@@ -79,6 +73,14 @@
 
 .contacts__map-img {
   display: block;
+}
+
+.contacts__map-triangle {
+  position: absolute;
+  top: -1px;
+
+  height: 100%;
+  width: 100%;
 }
 
 @include tablet() {

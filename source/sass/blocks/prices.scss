@@ -1,7 +1,7 @@
 .prices {
   width: $mobile_width;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 90px;
   padding-bottom: 47px;
 
   overflow: hidden;
@@ -163,7 +163,7 @@
 @include tablet() {
   .prices {
     width: $tablet_width;
-    padding-top: 40px;
+    padding-top: 92px;
     padding-bottom: 68px;
   }
 
@@ -274,7 +274,7 @@
 @include desktop() {
   .prices {
     width: 100%;
-    padding-top: 68px;
+    padding-top: 158px;
     padding-bottom: 95px;
   }
 
