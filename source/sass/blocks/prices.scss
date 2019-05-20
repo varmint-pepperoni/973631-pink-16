@@ -229,6 +229,9 @@
       padding-top: 10px;
       padding-bottom: 10px;
 
+      // Хак для IE
+      min-height: 45px;
+
       &::before {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
