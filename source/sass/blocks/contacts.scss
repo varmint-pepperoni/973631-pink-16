@@ -75,11 +75,16 @@
   display: block;
 }
 
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .contacts__map-triangle {
   position: absolute;
-  top: -1px;
+  top: 0;
+  left: 0;
 
-  height: 100%;
   width: 100%;
 }
 

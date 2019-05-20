@@ -412,14 +412,19 @@
         </div>
 
         <div class="contacts__map">
-          <picture class="contacts__map-picture">
-            <source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 960px)">
-            <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg" media="(min-width: 660px)">
-            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"
-                 alt="ул. Большая Конюшенная, 19/8">
-          </picture>
+          <!--<picture class="contacts__map-picture">-->
+            <!--<source srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 960px)">-->
+            <!--<source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg" media="(min-width: 660px)">-->
+            <!--<img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"-->
+                 <!--alt="ул. Большая Конюшенная, 19/8">-->
+          <!--</picture>-->
 
-          <div class="contacts__map-triangle triangle-background triangle-background--footer"></div>
+          <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCfSyV8V" width="320"
+                  height="200" frameborder="0" allowfullscreen="true"></iframe>
+
+          <svg class="contacts__map-triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 596 62" preserveAspectRatio="xMidYMin">
+            <polygon fill="#ffffff" points="298,62 0,0 595,0"/>
+          </svg>
         </div>
       </section>
     </main>
