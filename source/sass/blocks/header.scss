@@ -12,8 +12,10 @@
       position: static;
 
       .header__top {
-        background-color: $color_dark_blue;
+        min-height: 69px;
         border-bottom: 1px solid #000000;
+
+        background-color: $color_dark_blue;
       }
 
       .header__btn--open {
@@ -40,13 +42,13 @@
 .header__top {
   position: relative;
 
-  height: 66px;
+  min-height: 66px;
 }
 
 .header__link {
   position: absolute;
   top: 22px;
-  left: 20px;
+  left: 21px;
 
   display: block;
 
@@ -64,13 +66,13 @@
 
 .header__logo {
   width: 75px;
-  height: 22px;
+  height: 23px;
 }
 
 .header__btns {
   position: absolute;
   top: 21px;
-  right: 20px;
+  right: 18px;
 
   font-size: 0;
 }

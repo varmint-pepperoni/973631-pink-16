@@ -11,18 +11,18 @@
   padding-right: 20px;
 
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   font-weight: 300;
   color: $color_dark_blue;
   text-align: center;
 }
 
 .advantages__question {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .advantages__answer {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .advantages__list {
@@ -40,7 +40,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   text-align: center;
 
@@ -53,8 +53,8 @@
     transform: translateX(-50%);
 
     display: none;
-    width: 157px;
-    height: 280px;
+    width: 156px;
+    height: 279px;
 
     background-image: url("../../img/iphone-screen-mobile@1x.png");
     background-size: 157px 320px;
@@ -67,7 +67,7 @@
 
   &:last-child {
     margin-bottom: 0;
-    padding-bottom: 320px;
+    padding-bottom: 318px;
 
     &::before {
       display: block;
@@ -77,7 +77,7 @@
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font-size: 18px;
   line-height: normal;

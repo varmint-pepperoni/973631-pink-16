@@ -1,7 +1,7 @@
 .contacts {
   width: $mobile_width;
   margin: 0 auto;
-  padding-top: 45px;
+  padding-top: 41px;
 
   background-color: #ffffff;
 }
@@ -17,7 +17,7 @@
 }
 
 .contacts__answer {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .contacts__address {
@@ -27,7 +27,11 @@
 
 .contacts__info-block {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  &:nth-child(2) {
+    margin-bottom: 19px;
+  }
 
   &:last-child {
     margin-bottom: 35px;
@@ -54,6 +58,10 @@
 
   &:active {
     color: #d5d7d9;
+  }
+
+  &--tel {
+    line-height: 24px;
   }
 }
 
