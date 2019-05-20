@@ -1,27 +1,10 @@
 .triangle-background {
   background-image: url("../../img/triangle.svg");
-  background-size: $mobile_width 25px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
 
   &--footer {
     background-image: url("../../img/triangle-footer.svg");
-    background-size: $mobile_width 33px;
-  }
-}
-
-@include tablet() {
-  .triangle-background {
-    background-size: $tablet_width 52px;
-
-    &--footer {
-      background-size: $tablet_width 68px;
-    }
-  }
-}
-
-@include desktop() {
-  .triangle-background {
-    background-size: contain;
   }
 }
