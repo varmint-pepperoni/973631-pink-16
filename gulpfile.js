@@ -12,6 +12,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var concat = require("gulp-concat");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -29,7 +30,8 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/*.js")
+    .pipe(concat('script.js'))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
