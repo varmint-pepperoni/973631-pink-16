@@ -182,6 +182,7 @@
 
       width: 960px;
       height: 645px;
+      margin-left: 71px;
 
       background-image: url("../../img/iphone-hand-desktop@1x.png");
       background-size: 1050px 645px;
@@ -193,6 +194,34 @@
   }
 
   .download__inner {
+    width: 320px;
     padding-left: 0;
+    padding-top: 108px;
+  }
+
+  .download__slogan {
+    width: 260px;
+    margin-left: 20px;
+    margin-bottom: 51px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__button {
+    margin-bottom: 68px;
+  }
+
+  .download__list {
+    margin-bottom: 56px;
+  }
+
+  .download__link--android {
+    margin-top: 8px;
+    margin-left: -1px;
+  }
+
+  .download__text {
+    margin-left: 0;
   }
 }

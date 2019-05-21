@@ -144,7 +144,7 @@
 @include desktop() {
   .contacts {
     width: 100%;
-    padding-top: 65px;
+    padding-top: 64px;
   }
 
   .contacts__question,
@@ -153,23 +153,25 @@
     line-height: 60px;
   }
 
+  .contacts__answer {
+    margin-bottom: 52px;
+  }
+
   .contacts__address {
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
   }
 
   .contacts__info-block {
     &:nth-child(1),
-    &:nth-child(2) {
-      width: auto;
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 300px;
       margin-bottom: 0;
     }
 
     &:nth-child(2) {
       order: 1;
-    }
-
-    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -179,7 +181,7 @@
   }
 
   .contacts__map {
-    height: 510px;
+    height: 500px;
   }
 
   .contacts__map-picture {

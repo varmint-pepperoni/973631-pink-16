@@ -36,3 +36,9 @@
     color: $color_pink;
   }
 }
+
+@include desktop() {
+  .button-round {
+    font-size: 21px;
+  }
+}

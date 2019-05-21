@@ -186,14 +186,14 @@
       padding-right: 22px;
     }
 
-    .prices__table-field {
-      margin-bottom: 0;
-    }
-
     &:first-child {
       display: table-cell;
       visibility: hidden;
     }
+  }
+
+  .prices__table-field {
+    margin-bottom: 0;
   }
 
   // Хаки для эмулирования закруглённых углов у таблицы
@@ -289,7 +289,7 @@
 @include desktop() {
   .prices {
     width: 100%;
-    padding-top: 158px;
+    padding-top: 147px;
     padding-bottom: 95px;
   }
 
@@ -297,9 +297,23 @@
     width: $desktop_width - 20px;
   }
 
+  .prices__table-th {
+    .prices__table-cell {
+      padding-top: 16px;
+      padding-bottom: 19px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+  }
+
+  .prices__table-field {
+    margin-bottom: 2px;
+  }
+
   .prices__table-function {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 
     font-size: 18px;
   }
