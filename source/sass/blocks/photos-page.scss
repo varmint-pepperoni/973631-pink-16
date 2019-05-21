@@ -1,3 +1,10 @@
 .photos-page__main-text-2 {
   padding-bottom: 42px;
 }
+
+@include tablet() {
+  .photos-page__main-text-2 {
+    padding-top: 66px;
+    padding-bottom: 69px;
+  }
+}

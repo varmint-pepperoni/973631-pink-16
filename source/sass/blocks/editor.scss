@@ -87,7 +87,7 @@
     padding-top: 57px;
     padding-bottom: 54px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 32px;
   }
 
   .editor__picture {
@@ -163,6 +163,10 @@
   .editor__btns {
     margin-top: auto;
     padding: 0;
+  }
+
+  .editor__btn:first-child {
+    margin-bottom: 24px;
   }
 }
 

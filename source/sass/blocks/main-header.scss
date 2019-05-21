@@ -30,8 +30,8 @@
 @include tablet() {
   .main-header {
     width: $tablet_width;
-    padding-top: 185px;
-    padding-bottom: 145px;
+    padding-top: 180px;
+    padding-bottom: 140px;
 
     background-size: 1200px 729px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
