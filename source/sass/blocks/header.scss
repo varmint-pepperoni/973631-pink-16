@@ -110,6 +110,14 @@
 @include tablet() {
   .header {
     width: $tablet_width;
+
+    @include mobile_tablet() {
+      &--menu-open {
+        .header__top {
+          min-height: 110px;
+        }
+      }
+    }
   }
 
   .header__top {

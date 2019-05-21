@@ -100,12 +100,17 @@
 @include tablet() {
   .contacts {
     width: $tablet_width;
+    padding-top: 46px;
   }
 
   .contacts__question,
   .contacts__answer {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  .contacts__answer {
+    margin-bottom: 37px;
   }
 
   .contacts__address {

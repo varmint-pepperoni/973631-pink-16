@@ -103,6 +103,7 @@
   .advantages__question,
   .advantages__answer {
     font-size: 40px;
+    line-height: 48px;
   }
 
   .advantages__question {
@@ -114,16 +115,18 @@
   }
 
   .advantages__list {
-    padding-left: 310px;
+    padding-left: 332px;
     padding-top: 77px;
     padding-bottom: 40px;
   }
 
   .advantages__item {
+    margin-bottom: 34px;
+
     text-align: left;
 
     &::before {
-      left: 20px;
+      left: 23px;
       transform: none;
 
       width: 268px;
@@ -137,9 +140,19 @@
       }
     }
 
+    &:first-child {
+      .advantages__item-title {
+        margin-bottom: 10px;
+      }
+    }
+
     &:last-child {
       padding-bottom: 0;
     }
+  }
+
+  .advantages__item-title {
+    margin-bottom: 13px;
   }
 
   .advantages__effect {
@@ -150,16 +163,16 @@
   .advantages__effect-inner {
     position: relative;
 
-    padding-left: 310px;
+    padding-left: 330px;
     padding-right: 20px;
-    padding-top: 100px;
+    padding-top: 97px;
     min-height: 336px;
 
     &::before {
       content: "24";
 
       position: absolute;
-      left: 20px;
+      left: 22px;
       top: 60px;
 
       width: 238px;
@@ -182,7 +195,7 @@
   .advantages__effect-title {
     width: 180px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
 
     font-weight: 700;
     font-size: 30px;
@@ -191,7 +204,7 @@
 
   .advantages__effect-description {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 
     color: $color_dark_blue;
   }
