@@ -351,6 +351,8 @@
   }
 
   .form__fullname-field {
+    margin-bottom: 49px;
+
     &:first-child {
       margin-bottom: 54px;
     }
@@ -363,6 +365,7 @@
   }
 
   .form__achievements-body {
+    padding-top: 43px;
     padding-bottom: 55px;
   }
 
@@ -386,13 +389,15 @@
 
   .form__contacts {
     width: 100%;
-    margin-top: 57px;
+    margin-top: 56px;
+    margin-bottom: 57px;
   }
 
   .form__contacts-body {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-top: 33px;
+    padding-bottom: 13px;
   }
 
   .form__contacts-field {
@@ -411,12 +416,19 @@
     padding-left: 74px;
     padding-right: 74px;
     padding-bottom: 55px;
+    padding-top: 45px;
   }
 
   // Review
 
   .form__review {
     width: 100%;
+    margin-bottom: 65px;
+  }
+
+  .form__review-body {
+    padding-top: 33px;
+    padding-bottom: 44px;
   }
 
   .form__review-field {

@@ -67,3 +67,9 @@
     padding-left: 57px;
   }
 }
+
+@include desktop() {
+  .radio__label {
+    padding-left: 59px;
+  }
+}
