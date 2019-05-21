@@ -1,9 +1,13 @@
 .form-page__main {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+}
+
+.form-page__main-header {
+  padding-bottom: 51px;
 }
 
 .form-page__main-text {
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 }
 
 @include tablet() {

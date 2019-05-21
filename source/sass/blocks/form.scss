@@ -18,7 +18,7 @@
 
 .form__fullname-field {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 
   &:last-child {
     margin-bottom: 0;
@@ -26,8 +26,9 @@
 }
 
 .form__fullname-label {
-  padding-left: 23px;
-  margin-bottom: 10px;
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 5px;
 
   line-height: 30px;
   color: $color_pink;
@@ -42,7 +43,7 @@
 // Achievements
 
 .form__achievements-body {
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 42px;
 }
 
@@ -58,13 +59,13 @@
 // Contacts
 
 .form__contacts-body {
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 42px;
 }
 
 .form__contacts-field {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 
   &:last-child {
     margin-bottom: 0;
@@ -72,8 +73,9 @@
 }
 
 .form__contacts-label {
+  display: block;
   padding-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   line-height: 30px;
   color: $color_pink;
@@ -88,7 +90,7 @@
 // Application
 
 .form__application-body {
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 42px;
 }
 
@@ -129,7 +131,7 @@
 .form__button {
   display: block;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .form__note {
