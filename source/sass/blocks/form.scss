@@ -163,7 +163,7 @@
 
   .form__fullname {
     order: 1;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
 
   .form__fullname-field {
@@ -174,7 +174,8 @@
 
   .form__fullname-label {
     padding-left: 0;
-    margin-right: 20px;
+    margin-right: 17px;
+    margin-bottom: 0;
   }
 
   .form__fullname-input {
@@ -197,18 +198,18 @@
 
   .form__contacts {
     order: 3;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .form__contacts-body {
-    padding-top: 38px;
+    padding-top: 37px;
     padding-bottom: 27px;
   }
 
   .form__contacts-field {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .form__contacts-phone,
@@ -268,14 +269,14 @@
 
   .form__contacts-label {
     margin-bottom: 0;
-    padding-left: 20px;
+    padding-left: 17px;
   }
 
   .form__contacts-input {
     position: relative;
     z-index: 1;
 
-    padding-left: 20px;
+    padding-left: 16px;
     padding-right: 80px;
 
     background-color: transparent;
@@ -289,7 +290,7 @@
   }
 
   .form__application-body {
-    padding-top: 45px;
+    padding-top: 43px;
     padding-bottom: 54px;
   }
 
@@ -301,8 +302,13 @@
   }
 
   .form__review-body {
-    padding-top: 35px;
+    padding-top: 38px;
     padding-bottom: 51px;
+  }
+
+  .form__review-field {
+    min-height: 193px;
+    padding-left: 16px;
   }
 
   // Footer

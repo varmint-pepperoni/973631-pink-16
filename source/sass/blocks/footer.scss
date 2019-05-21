@@ -99,7 +99,7 @@
     width: 180px;
     padding-top: 4px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: -17px;
   }
 
   // Pixelperfect
@@ -113,6 +113,10 @@
     width: 100%;
     padding-top: 98px;
     padding-bottom: 74px;
+  }
+
+  .footer__socials {
+    margin-left: 15px;
   }
 
   .footer__developer-text {
