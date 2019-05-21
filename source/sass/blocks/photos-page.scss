@@ -8,3 +8,9 @@
     padding-bottom: 69px;
   }
 }
+@include tablet() {
+  .photos-page__main-text-2 {
+    padding-top: 60px;
+    padding-bottom: 66px;
+  }
+}

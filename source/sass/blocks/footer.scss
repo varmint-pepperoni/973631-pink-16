@@ -96,10 +96,10 @@
 
   .footer__socials {
     justify-content: space-between;
-    width: 175px;
+    width: 180px;
     padding-top: 4px;
     margin-bottom: 0;
-    margin-left: -18px;
+    margin-left: 15px;
   }
 
   // Pixelperfect
@@ -111,7 +111,12 @@
 @include desktop() {
   .footer {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 98px;
     padding-bottom: 74px;
+  }
+
+  .footer__developer-text {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

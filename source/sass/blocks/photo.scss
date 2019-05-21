@@ -193,6 +193,11 @@
       // Хак для IE. Иначе появляется горизонтальная прокрутка.
       overflow: hidden;
 
+      // Pixelperfect
+      .photo__picture {
+        height: 506px;
+      }
+
       .photo__img {
         margin: 0 auto;
       }
@@ -207,6 +212,7 @@
   .photo__panorama {
     width: $desktop_width;
     left: 50%;
+    top: 55px;
     transform: translateX(-50%);
   }
 
