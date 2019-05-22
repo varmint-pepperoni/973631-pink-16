@@ -35,10 +35,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-@include only_mobile() {
-  .mobile-hidden {
-    // Блок точно должен быть скрыт на мобильном разрешении. Иначе этот стиль могу переопределить другие стили.
-    display: none !important; /* stylelint-disable-line */
-  }
-}

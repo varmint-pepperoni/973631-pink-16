@@ -23,6 +23,10 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .fieldset__body {
@@ -47,6 +51,10 @@
 
   .fieldset__title {
     padding-top: 0;
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .fieldset__body {
