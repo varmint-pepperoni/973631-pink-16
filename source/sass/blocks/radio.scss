@@ -4,6 +4,16 @@
   &:checked + .radio__label::after {
     display: block;
   }
+
+  &:disabled + .radio__label {
+    opacity: 0.3;
+  }
+
+  &:disabled + .radio__label:hover {
+    &::before {
+      border-color: $color_gray_3;
+    }
+  }
 }
 
 .radio__label {

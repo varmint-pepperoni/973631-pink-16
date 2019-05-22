@@ -4,6 +4,16 @@
   &:checked + .checkbox__label::after {
     display: block;
   }
+
+  &:disabled + .checkbox__label {
+    opacity: 0.3;
+  }
+
+  &:disabled + .checkbox__label:hover {
+    &::before {
+      border-color: $color_gray_3;
+    }
+  }
 }
 
 .checkbox__label {
