@@ -103,13 +103,13 @@
     </h1>
   </section>
 
-  <section class="main-text">
+  <div class="main-text">
     <p class="main-text__paragraph container">
       Взгляните на фотографии, которые выкладывают<br class="br br--tablet">пользователи!
       <br class="br br--mobile br--desktop">
       Видите, как не хватает ваших?
     </p>
-  </section>
+  </div>
 
   <article class="photo photo--panorama">
     <a href="img/panorama-desktop@2x.jpg">
@@ -122,7 +122,7 @@
     </a>
 
     <div class="photo__panorama">
-      <p class="photo__panorama-text">Панорама дня</p>
+      <h2 class="photo__panorama-text">Панорама дня</h2>
     </div>
 
     <div class="photo__info">
@@ -141,16 +141,20 @@
   </article>
 
   <section class="photos">
+    <h2 class="visually-hidden">Фотографиии пользователей</h2>
+
     <ul class="photos__list">
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография машины</h2>
+
           <a href="img/photo-car-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
                 media="(min-width: 960px)">
               <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-car-mobile@1x.jpg"
-                srcset="img/photo-car-mobile@2x.jpg 2x" alt="Картинка машины">
+                srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография машины">
             </picture>
           </a>
 
@@ -171,6 +175,8 @@
 
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография барабанов</h2>
+
           <a href="img/photo-drumset-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
@@ -178,7 +184,7 @@
               <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
                 media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg"
-                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Картинка барабанов">
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография барабанов">
             </picture>
           </a>
 
@@ -199,6 +205,8 @@
 
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография окон</h2>
+
           <a href="img/photo-window-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
@@ -206,7 +214,7 @@
               <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
                 media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-window-mobile@1x.jpg"
-                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Картинка окон">
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография окон">
             </picture>
           </a>
 
@@ -227,6 +235,8 @@
 
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография кубанской бахчи</h2>
+
           <a href="img/photo-fair-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
@@ -234,7 +244,7 @@
               <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
                 media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-fair-mobile@1x.jpg"
-                srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Картинка кубанской бахчи">
+                srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография кубанской бахчи">
             </picture>
           </a>
 
@@ -255,13 +265,15 @@
 
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография гор</h2>
+
           <a href="img/photo-pov-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
                 media="(min-width: 960px)">
               <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-pov-mobile@1x.jpg"
-                srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
+                srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография гор">
             </picture>
           </a>
 
@@ -282,6 +294,8 @@
 
       <li class="photos__item">
         <article class="photo">
+          <h2 class="visually-hidden">Фотография крыла самолёта</h2>
+
           <a href="img/photo-wing-desktop@2x.jpg">
             <picture class="photo__picture">
               <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"
@@ -289,7 +303,7 @@
               <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
                 media="(min-width: 660px)">
               <img class="photo__img" src="img/photo-wing-mobile@1x.jpg"
-                srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолёта">
+                srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография крыла самолёта">
             </picture>
           </a>
 
@@ -310,13 +324,15 @@
     </ul>
   </section>
 
-  <section class="main-text photos-page__main-text-2">
+  <div class="main-text photos-page__main-text-2">
     <p class="main-text__paragraph container">
       Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
     </p>
-  </section>
+  </div>
 
   <section class="editor">
+    <h2 class="visually-hidden">Фоторедактор</h2>
+
     <picture class="editor__picture">
       <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 960px)">
       <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
