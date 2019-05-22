@@ -13,6 +13,8 @@ var rename = require("gulp-rename");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var concat = require("gulp-concat");
+var svgstore = require("gulp-svgstore");
+var cheerio = require("gulp-cheerio");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -57,6 +59,19 @@ gulp.task("img", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("sprite", function () {
+  return gulp.src("source/img/sprite/*.svg")
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('symbol').attr('fill', 'currentColor');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
@@ -91,5 +106,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "js", "html", "img"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html", "img"));
 gulp.task("start", gulp.series("build", "server"));
