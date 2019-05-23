@@ -23,6 +23,10 @@
     padding-top: 92px;
     padding-bottom: 70px;
   }
+
+  .form-page__main-text-paragraph {
+    width: 500px;
+  }
 }
 
 @include desktop() {
@@ -40,5 +44,9 @@
 
   .form-page__footer {
     padding-top: 68px;
+  }
+
+  .form-page__main-text-paragraph {
+    width: 760px;
   }
 }
